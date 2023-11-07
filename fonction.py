@@ -217,6 +217,8 @@ else:
     print(f"{n} n'est pas un nombre cubique.")
 
 """
+
+"""
 def factoriel(n):
     if n == 0:
         return 1
@@ -235,3 +237,17 @@ def calculer_somme(n):
 n = int(input("Donner un nombre"))
 R = calculer_somme(n)
 print("la somme est", R)
+"""
+def factoriel(n):
+    if n == 0:
+        return 1
+    else:
+        R = 1
+        for i in range(1, n + 1):
+            R *= i
+        return R
+
+
+n = int(input("Un nombre n"))
+resultat = factoriel(n)
+print("Le factoriel de ",n," est :",resultat)
