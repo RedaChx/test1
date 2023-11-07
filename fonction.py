@@ -239,13 +239,10 @@ R = calculer_somme(n)
 print("la somme est", R)
 """
 def factoriel(n):
-    if n == 0:
-        return 1
-    else:
-        R = 1
-        for i in range(1, n + 1):
-            R *= i
-        return R
+    R = 1
+    for i in range(1, n + 1):
+        R *= i
+    return R
 
 
 n = int(input("Un nombre n"))
